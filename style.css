@@ -1,0 +1,263 @@
+
+* {
+    margin: 0; 
+ }
+ 
+ html {
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #17191D;
+ }
+
+ h3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+
+ a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #828282;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+ }
+
+ a:hover {
+    cursor: pointer;
+    border-bottom: solid #fff 1.5px;
+    color: #fff;
+ }
+
+ .logo img {
+    width: 110px;
+    height: 110px;
+ }
+ .logo a {
+  border: none;
+ }
+ .header {
+    max-width: 1300px;
+    width: 100%;
+ }
+
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navitems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  button {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background-color: #25272C;
+    border: solid rgba(255,255,255,0) 1px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #6FC0FB;
+  }
+
+  button:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #282F3C;
+    border: solid #6FC0FB 1px;
+  }
+
+  .games {
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .famous-games {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .other-games {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .vs {
+    color: red;
+  }
+  .games-card {
+    width: 33.33%;
+    height: 160px;
+    background-color: #25272C;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+  .games-card h2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .games-card p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #9D9D9D;
+  }
+  .games-card h4 {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #696969;
+  }
+  .games-badge {
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    color: #FB6F6F;
+    border: solid #FB6F6F 1px;
+    border-radius: 5px;
+  }
+  .games-icon {
+    width: 38px;
+    height: 36px;
+    border: solid #FB6F6F 1px;
+    background-color: rgba(251,111,111,0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .games-card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+  }
+  .games-title {
+    width: 100%;
+  }
+  .games-card-stats {
+    display: flex;
+    gap: 10px;
+  }
+  .games-card-stats a {
+    background-color: #2C2F34;
+    color: #9D9D9D;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .games-card-stats b {
+    color: #fff;
+  }
+
+  .games-card-stats a:hover {
+    border: none;
+  }
+
+
+  .more-infos {
+    max-width: 1200px;
+    width: 100%;
+  }
+  .actions-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .infos-card {
+    width: 50%;
+    height: 160px;
+    background-color: #25272C;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+
+  footer {
+    padding: 30px 0;
+    margin-top: 55px;
+    background-color: #0C0E10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-content {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer .logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  footer .logo a {
+    padding: 0;
+  }
+
+  .footer-infos {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  .footer-infos p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .footer-infos a {
+    border: none;
+    font-size: 12px;
+    color: #3F4041;
+    text-transform: none;
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  .footer-infos a:hover {
+    color: #676B6F;
+  }
+
+  .footer-icons a {
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0;
+    margin-left: 10px;
+  }

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoDelays - Minecraft</title>
+    <link rel="shortcut icon" type="image/png" href="public/images/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="navitems">
+                <button id="ip">v2.nodelays.fr</button>
+                <a href="index.html">Jeux</a>
+                <a href="index.html">Stats</a>
+                <a href="index.html">Boutique</a>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img href="index.html" src="public/images/logo.gif"></a>
+            </div>
+            <div class="navitems">
+                <a href="index.html">Rapport de bug</a>
+                <a href="index.html">Feedback</a>
+                <button id="link">Lier mon compte</button>
+            </div>
+        </nav>
+    </div>
+    <div class="games">
+        <h3>Nos jeux disponibles</h3>
+        <div class="famous-games">
+            <div class="games-card">
+                <div class="games-card-top">
+                    <div class="games-icon">
+                        <img src="public/images/fk.png">
+                    </div>
+                    <div class="games-title">
+                        <h2>Fallen Kingdoms</h2>
+                        <h4>Mini-Jeu PvP</h4>
+                    </div>
+                    <div class="games-badge">Stratégie</div>
+                </div>
+                <p>Chaque équipe dispose d’un cœur à défendre. Pour cela, équipez-vous, construisez et éliminez vos ennemis. Récupérez des TNT et d’autres ressources pour partir à l’assaut des adversaires pour gagner !</p>
+                <div class="games-card-stats">
+                    <a><b>2,540</b> ont joués</a>
+                    <a><b>150</b> parties lancées</a>
+                </div>
+            </div>
+            <div class="games-card">
+                <div class="games-card-top">
+                    <div class="games-icon">
+                        <img src="public/images/fc.png">
+                    </div>
+                    <div class="games-title">
+                        <h2>Fight Club</h2>
+                        <h4>Mini-Jeu PvP</h4>
+                    </div>
+                    <div class="games-badge">Combat</div>
+                </div>
+                <p>En 1 contre 1, affrontez les autres adversaires présents sur la carte. Équipés dès le début, tuez et récupérez le stuff de vos adversaires car un seul sera l’heureux vainqueur de la partie !</p>
+                <div class="games-card-stats">
+                    <a><b>540</b> ont joués</a>
+                    <a><b>20</b> parties lancées</a>
+                </div>
+            </div>
+            <div class="games-card">
+                <div class="games-card-top">
+                    <div class="games-icon">
+                        <img src="public/images/uhc.png">
+                    </div>
+                    <div class="games-title">
+                        <h2>UHC Host</h2>
+                        <h4>PvP</h4>
+                    </div>
+                    <div class="games-badge">Combat</div>
+                </div>
+                <p>Une infinité de possibilités existent !
+                    Jouez avec de nouveaux modes, des scénarios inédits, personnalisez vos parties comme vous le souhaitez ou rejoignez celle des autres joueurs.</p>
+                <div class="games-card-stats">
+                    <a><b>13,580</b> ont joués</a>
+                    <a><b>3,873</b> parties lancées</a>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="other-games">
+            <div class="games-card">
+                <div class="games-card-top">
+                    <div class="games-icon" id="vs">
+                        <img src="public/images/vs.png">
+                    </div>
+                    <div class="games-title">
+                        <h2>Versus</h2>
+                        <h4>Mini-jeu Training</h4>
+                    </div>
+                    <div class="games-badge">Combat</div>
+                </div>
+                <p>Similaire au Fallen Kingdoms. Entraînez-vous à attaquer et défendre une base déjà préparée, dans un nombre de manches prédéfini en avance.
+                    Alternez de camp à chaque fin de manche !</p>
+                <div class="games-card-stats">
+                    <a><b>489</b> ont joués</a>
+                    <a><b>98</b> parties lancées</a>
+                </div>
+            </div>
+            <div class="games-card">
+                <div class="games-card-top">
+                    <div class="games-icon">
+                        <img src="public/images/p4.png">
+                    </div>
+                    <div class="games-title">
+                        <h2>Puissance 4</h2>
+                        <h4>Jeu de Lobby</h4>
+                    </div>
+                    <div class="games-badge">Fun</div>
+                </div>
+                <p>En 1 contre 1, affrontez un adversaire dans le jeu emblématique du Puissance 4 revisité à la sauce Minecraft. Réveillez votre esprit stratège et alignez 4 laines pour gagner votre partie.</p>
+                <div class="games-card-stats">
+                    <a><b>65,945</b> ont joués</a>
+                    <a><b>5,849</b> parties lancées</a>
+                </div>
+            </div>
+            <div class="games-card">
+                <div class="games-card-top">
+                    <div class="games-icon">
+                        <img src="public/images/luck.png">
+                    </div>
+                    <div class="games-title">
+                        <h2>Loterie</h2>
+                        <h4>Jeu de Lobby</h4>
+                    </div>
+                    <div class="games-badge">Chance</div>
+                </div>
+                <p>Une infinité de possibilités existent !
+                    Jouez avec de nouveaux modes, des scénarios inédits, personnalisez vos parties comme vous le souhaitez ou rejoignez celle des autres joueurs.</p>
+                <div class="games-card-stats">
+                    <a><b>15,894</b> ont joués</a>
+                    <a><b>15,894</b> parties lancées</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more-infos">
+        <h3>Envie de soutenir le serveur ?</h3>
+        <div class="actions-infos">
+            <div class="infos-card">
+                <h3>Nodelays</h3>
+                <h2>Serveur</h2>
+                <p>Divertissement assuré !</p>
+                <button id="play">Je veux jouer sur le serveur</button>
+            </div>
+            <div class="infos-card">
+                <h3>Nodelays</h3>
+                <h2>Soutiens</h2>
+                <p>Bénévolat et évolution joviale.</p>
+                <button id="play">Je veux contribuer au serveur</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <a href="index.html"><img href="index.html" src="public/images/logo.gif"></a>
+            </div>
+            <div class="footer-infos">
+                <p>2023 - Nodelays.fr</p>
+                <div class="footer-links">
+                    <a href="index.html">Politique de confidentialité</a>
+                    <a href="index.html">CGU & CGV</a>
+                    <a href="index.html">Mentions légales</a>
+                </div>
+            </div>
+            <div class="footer-icons">
+                <a class="ri-discord-fill" href="https://discord.nodelays.fr", target="_blank"> </a>
+                <a class="ri-twitter-fill" href="https://twitter.com", target="_blank"> </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

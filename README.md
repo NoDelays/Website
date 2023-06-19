@@ -1,2 +1,2 @@
 # Website
-NoDelays' website
+Website for NoDelays' server
