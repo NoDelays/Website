@@ -16,7 +16,8 @@
     <div class="header">
         <nav class="navbar">
             <div class="navitems">
-                <button id="ip">v2.nodelays.fr</button>
+                <button id="copyIp">v2.nodelays.fr</button>
+                <div id="toastCopyIp">🔗 IP copiée - v2.nodelays.fr</div>
                 <a href="index.html">Jeux</a>
                 <a href="index.html">Stats</a>
                 <a href="index.html">Boutique</a>
@@ -33,7 +34,7 @@
     </div>
     <div class="games">
         <h3>Nos jeux disponibles</h3>
-        <div class="famous-games">
+        <div class="games-container">
             <div class="games-card">
                 <div class="games-card-top">
                     <div class="games-icon">
@@ -85,21 +86,17 @@
                     <a><b>13,580</b> ont joués</a>
                     <a><b>3,873</b> parties lancées</a>
                 </div>
-            </div>
-            
-
-        </div>
-        <div class="other-games">
+            </div>      
             <div class="games-card">
                 <div class="games-card-top">
-                    <div class="games-icon" id="vs">
+                    <div class="games-icon">
                         <img src="public/images/vs.png">
                     </div>
                     <div class="games-title">
                         <h2>Versus</h2>
                         <h4>Mini-jeu Training</h4>
                     </div>
-                    <div class="games-badge">Combat</div>
+                    <div class="games-badge">Entraînement</div>
                 </div>
                 <p>Similaire au Fallen Kingdoms. Entraînez-vous à attaquer et défendre une base déjà préparée, dans un nombre de manches prédéfini en avance.
                     Alternez de camp à chaque fin de manche !</p>
@@ -117,7 +114,7 @@
                         <h2>Puissance 4</h2>
                         <h4>Jeu de Lobby</h4>
                     </div>
-                    <div class="games-badge">Fun</div>
+                    <div class="games-badge">Divertissement</div>
                 </div>
                 <p>En 1 contre 1, affrontez un adversaire dans le jeu emblématique du Puissance 4 revisité à la sauce Minecraft. Réveillez votre esprit stratège et alignez 4 laines pour gagner votre partie.</p>
                 <div class="games-card-stats">
@@ -181,5 +178,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('copyIp').addEventListener('click', function() {
+        const textToCopy = 'v2.nodelays.fr'; // Replace with the content you want to copy
+
+        // Copy text to clipboard
+        navigator.clipboard.writeText(textToCopy);
+
+        // Show toast message
+        const toastMessage = document.getElementById('toastCopyIp');
+        if (!toastMessage.classList.contains('show')) {
+            toastMessage.classList.add('show');
+            setTimeout(function() {
+            toastMessage.classList.remove('show');
+            }, 2000); // Adjust the duration (in milliseconds) as per your preference
+        } else {
+            clearTimeout(toastMessage.timerId);
+            toastMessage.timerId = setTimeout(function() {
+            toastMessage.classList.remove('show');
+            }, 2000);
+        }
+        });
+    </script>
 </body>
 </html>
